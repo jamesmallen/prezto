@@ -31,8 +31,16 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'git' \
+  'homebrew' \
+  'osx' \
+  'python' \
   'completion' \
-  'prompt'
+  'fasd' \
+  'prompt' \
+  'autosuggestions' \
+  'syntax-highlighting' \
+  'history-substring-search'
 
 #
 # Deer
@@ -53,7 +61,7 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+# zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -75,6 +83,8 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 # History Substring Search
 #
+
+zstyle ':prezto:module:history-substring-search' color 'yes'
 
 # Set the query found color.
 # zstyle ':prezto:module:history-substring-search:color' found ''
@@ -131,13 +141,13 @@ zstyle ':prezto:module:prompt' theme 'jgarrett'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'line' \
-#   'cursor' \
-#   'root'
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'line' \
+  'cursor' \
+  'root'
 #
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
@@ -154,7 +164,7 @@ zstyle ':prezto:module:prompt' theme 'jgarrett'
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
